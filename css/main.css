@@ -124,8 +124,9 @@ body{
     flex-direction: column;
     padding: 100px 24px;
     background-image: url("../images/hero-mobilee.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
     /* background-position: calc(50%) calc(50%); */
 }
 
@@ -176,7 +177,7 @@ body{
         background-image: url("../images/hero-tablet.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center right;
         border-radius: 5px;
     }
     
