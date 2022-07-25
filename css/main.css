@@ -185,18 +185,23 @@ body{
         max-width: 398px;
         background-image: none;
     }
-
+    
+    .hero__heading{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
     .hero__heading,
     .hero__desc{
         text-align: left;
     }
-
+    
 }
 
 @media only screen and (min-width:665px){
-
-
-
+    
+    
+    
     .logo__img{
         width: 236px;
         height: 26px;
@@ -217,15 +222,29 @@ body{
         background-image: url("../images/hero-desctop.png");
         background-size: cover;
     }
+
+    .hero__wrap{
+        width: 100%;
+        max-width: 493px;
+    }
+    
+    .hero__heading{
+        font-size: 72px;
+        line-height: 72px;
+    }
+    
+    .hero__desc{
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 
-    
-    
-    
-    
-    
 
-    
-    
-    
+
+
+
+
+
+
+
