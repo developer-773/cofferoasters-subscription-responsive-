@@ -21,7 +21,8 @@
                     alt="Coffeeroaster's logo">
                 </a>
                 
-                <button class="site-header__menu-btn"></button>
+                <button id="myBtn" class="site-header__menu-btn"></button>
+                <img class="close" src="./images/mobile/modal-x.svg" width="13" height="13" alt="">
                 <nav class="sitenav">
                     <ul class="sitenav__list">
                         <li class="sitenav__item">
@@ -38,7 +39,7 @@
             </div>
         </div>
     </header>
-
+    
     <main>
         <section class="hero">
             <div class="container">
@@ -51,14 +52,125 @@
                                 coffees from our best roasters delivered directly to your door, at your schedule.
                             </p>
                             <a class="hero__link" href="#">Create your plan</a>
-                    </div>
+                        </div>
                     </div>
                 </div>
-            </section>    
+            </section>
+            <section class="collection">
+                <div class="container">
+                    <h2 class="visually-hidden">Our collection</h2>
+                    <ul class="collection__list collection__list--active">
+                        <li class="collection__item">
+                            <div class="collection__box">
+                                <img class="collection__img" src="./images/mobile/mobile-home-gran.png" width="201" height="151" alt="Gran Expresso Coffee">
+                                <img class="collection__big-img" src="./images/desktop/desktop-home-gran.png" width="255" height="193" alt="Gran Expresso Coffee">
+                            </div>
+                            <div class="collection__box-txt">
+                                <h3 class="colllection__title">Gran Espresso</h3>
+                                <p class="collection__desc">
+                                    Light and flavorful blend with cocoa and black pepper for an intense experience
+                                </p>
+                            </div>
+                        </li>
+                        <li class="collection__item">
+                            <div class="collection__box">
+                                <img class="collection__img" src="./images/mobile/mobile-home-planalto.png" width="201" height="151" alt="Planalto Coffee">
+                                <img class="collection__big-img" src="./images/desktop/desktop-home-planalto.png" width="255" height="193" alt="Planalto Coffee">
+                            </div>
+                            <div class="collection__box-txt">
+                                <h3 class="colllection__title">Planalto</h3>
+                                <p class="collection__desc">
+                                    Brazilian dark roast with rich and velvety body, and hints of fruits and nuts
+                                </p>
+                            </div>
+                        </li>
+                        <li class="collection__item">
+                            <div class="collection__box">
+                                <img class="collection__img" src="./images/mobile/mobile-home-piccolo.png" width="201" height="151" alt="Piccolo Coffee">
+                                <img class="collection__big-img" src="./images/desktop/desktop-home-piccolo.png" width="255" height="193" alt="Piccolo Coffee">
+                            </div>
+                            <div class="collection__box-txt">
+                                <h3 class="colllection__title">Piccollo</h3>
+                                <p class="collection__desc">
+                                    Mild and smooth blend featuring notes of toasted almond and dried cherry 
+                                </p>
+                            </div>
+                        </li>
+                        <li class="collection__item">
+                            <div class="collection__box">
+                                <img class="collection__img" src="./images/mobile/mobile-home-danche.png" width="201" height="151" alt="Piccolo Coffee">
+                                <img class="collection__big-img" src="./images/desktop/desktop-home-danche.png" width="255" height="193" alt="Danche Coffee">
+                            </div>
+                            <div class="collection__box-txt">
+                                <h3 class="colllection__title">Danche</h3>
+                                <p class="collection__desc">
+                                    Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="choose">
+                <div class="container">
+                    <div class="choose__box">
+                        <h2 class="choose__txt">Why choose us?</h2>
+                        <p class="choose__desc">
+                            A large part of our role is choosing which particular coffees will be featured  in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.
+                        </p>
+                    </div>
+                    <ul class="choose__list">
+                        <li class="choose__item">
+                            <div class="choose__box-txt">
+                                <h3 class="choose__heading">Best quality</h3>
+                                <p class="choose__descr">
+                                    Discover an endless variety of the world’s best artisan coffee from each of our roasters.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="choose__item">
+                            <div class="choose__box-txt">
+                            <h3 class="choose__heading">Exclusive benefits</h3>
+                            <p class="choose__descr">
+                                Special offers and swag when you subscribe, including 30% off your first shipment.
+                            </p>
+                        </div>
+                        </li>
+                        <li class="choose__item">
+                        <div class="choose__box-txt">
+                            <h3 class="choose__heading">Free shipping</h3>
+                            <p class="choose__descr">
+                                We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
+                            </p>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+        <div  id="myModal" class="modal">   
+            <div class="modal__main-box ">
+                <div class="modal__box">
+                    <ul class="modal__list">
+                        <li class="modal__item">
+                            <a class="modal__link" href="#">Home</a>
+                        </li>
+                        <li class="modal__item">
+                            <a class="modal__link" href="#">About Us</a>
+                        </li>
+                        <li class="modal__item">
+                            <a class="modal__link" href="#">Create Your Plan</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
         </div>
-    </main>
-
-
-
-</body>
-</html>
+        
+        <script src="./js/main.js"></script>
+        
+    </body>
+    </html>
