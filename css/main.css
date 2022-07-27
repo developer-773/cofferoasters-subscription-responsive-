@@ -16,6 +16,16 @@
     url('../fonts/barlow-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* barlow-700 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/barlow-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/barlow-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* GENERAL */
 
 *{
@@ -335,6 +345,154 @@ ul{
     color: #FEFCF7;
 }
 
+.works{
+    padding-top: 717px;
+    padding-bottom: 120px;
+}
+
+.works__item{
+    width: 100%;
+}
+
+.works__item::before{
+    display: block;
+    background-image: url("../images/01.svg");
+    width: 101px;
+    height: 72px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    content:"";
+}
+
+.works__item:nth-child(2)::before{
+    width: 101px;
+    height: 72px;
+    background-image: url("../images/02.svg");
+}
+
+.works__item:nth-child(3)::before{
+    width: 101px;
+    height: 72px;
+    background-image: url("../images/03.svg");
+}
+
+.works__heading{
+    margin-bottom: 80px;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #83888F;
+}
+
+.works__title{
+    margin-bottom: 24px;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+    
+}
+
+.works__desc{
+    margin-bottom: 56px;
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;    
+    color: #333D4B;
+}
+
+.works__link-box{
+    max-width: 217px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.works__link{
+    display: inline-block;
+    padding:15px 31px;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;       
+    color: #FEFCF7;    
+    background: #0E8784;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.footer-box{
+    width: 100%;
+    min-width: 300px;
+    padding: 54px 55px;
+    background-color: #2C343E;
+}
+
+.footer-box .logo .logo__img{
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-box__item{
+    text-align: center;
+}
+
+.footer-box__item:not(:last-child){
+    margin-bottom: 24px;    
+}
+
+.footer-box__item:last-child{
+    margin-bottom: 49px;
+}
+
+.footer-box__link{
+    font-family: 'Barlow';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    text-decoration: none;
+}
+
+
+.social__list{
+    display: flex;
+    justify-content: center;
+}
+
+.social__item{
+    margin-right: 24px;
+}
+
+.social__link{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* ========================= 
+
+DEFAULT MOBILE STYLES END
+
+=============================*/
+
+/* =============================
+
+MOBILE STYLES FOR 375px START
+
+==============================*/
+
+
+
 @media only screen and (min-width: 375px){
     
     .hero__img{
@@ -361,13 +519,53 @@ ul{
         text-align: left;
     }
     
+    .works{
+        padding-top: 717px;
+    }
+    
+}
+
+/* ==============================
+
+MOBILE STYLES FOR 375px FINISH
+
+=============================*/
+
+
+
+@media only screen and (min-width: 450px){
     
     
+    /* ==================================
+    
+    MOBILE STYLES GREEN CARDS OPTIMIZED
+    
+    =====================================*/
+    
+    .choose__item{
+        max-width: 340px;
+    }
+}
+
+@media only screen and (min-width: 530px){
+    
+    /* ==================================
+    
+    MOBILE STYLES GREEN CARDS OPTIMIZED
+    
+    =====================================*/
+    .choose__item{
+        max-width: 379px;
+    }
 }
 
 @media only screen and (min-width: 655px){
     
+    /* =============================
     
+    TABLET STYLES FOR 655px START
+    
+    ==============================*/
     
     .logo__img{
         width: 236px;
@@ -510,14 +708,143 @@ ul{
     }
     
     
+    .works{
+        padding-top: 434px;
+        /* padding-bottom: 120px; */
+    }
+    
+    .works__list{
+        display: flex;
+    }
+    
+    .works__heading{
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    .works__list{
+        position: relative;
+    }
+    
+    .works__list::before{
+        position: absolute;
+        z-index: 3;
+        display: inline-block;
+        width: 497px;
+        height: 31px;
+        background-image: url("../images/tablet-works-before.svg");
+        background-position: left;
+        background-repeat: no-repeat;
+        content: "";
+    }
+    
+    .works__item:not(:last-child){
+        margin-right: 10px;
+    }
+    .works__item::before{
+        margin-left: 0;
+        margin-top: 62px;   
+    }
+    
+    .works__title, 
+    .works__desc{
+        text-align: left;
+        
+    }
+    
+    .works__link-box{
+        max-width: 217px;
+        margin-right: auto;
+        margin-left: 0;
+    }
+    
+    
+    .footer-box{
+        /* width: 100%; */
+        min-width: 300px;
+        
+        padding: 54px 55px;
+        background-color: #2C343E;
+    }
+    
+    .footer-box .footer-box__list{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .footer-box__list{
+        display: flex;
+        max-width: 318px;
+    }
+    
+    .footer-box__item{
+        min-width: 0;
+        margin-right: 33px;
+    }
+    
+    .footer-box__item:not(:last-child){
+        margin-bottom: 24px;    
+    }
+    
+    .footer-box__item:last-child{
+        margin-bottom: 49px;
+    }
     
 }
 
 
+/* =============================
+
+TABLET STYLES FOR 655px FINISH
+
+==============================*/
+
+
+
+@media only screen and (min-width: 749px) {
+    
+    /* =============================
+    
+    TABLET STYLES BIG NUMBER'S BG-IMG OPTIMIZED
+    
+    ==============================*/
+    .works__list::before{
+        width: 791px;
+        background-image: url("../images/tablet-works-before-large.svg");
+    }
+}
+
+
+@media only screen and (min-width: 850px) {
+    /* =============================
+    
+    TABLET STYLES BIG NUMBER'S BG-IMG OPTIMIZED
+    
+    ==============================*/
+    .works__list::before{
+        width: 791px;
+        background-image: url("../images/tablet-works-before-medium.svg");
+    }
+}
 
 
 
 @media only screen and (min-width: 1000px){
+    
+    /* =============================
+    
+    DESKTOP STYLES FOR 1000px START
+    
+    ==============================*/
+    .sitenav__link{
+        transition: all 0.3s ease;
+    }
+    
+    .sitenav__link:hover{
+        color:  #333D4B;
+        
+    }
+    
     .hero__img{
         background-image: url("../images/hero-desctop.png");
         background-size: cover;
@@ -539,10 +866,23 @@ ul{
         line-height: 26px;
     }
     
+    .hero__link{
+        transition: all 0.3s ease;
+    }
+    
+    .hero__link:hover{
+        background-color: #66D2CF;
+    }
+    
+    .hero__link:active{
+        background-color: #E2DEDB;
+        
+    }
+    
     .collection__list{
         display: flex;
     }
-
+    
     .collection__list{
         display: flex;
     }
@@ -551,11 +891,6 @@ ul{
         display: block;
         margin-left: auto;
     }
-    /* 
-    .collection__item:not(:last-child){
-        
-        margin-right: 30px;
-    } */
     
     .collection__desc{
         font-size: 16px;
@@ -661,27 +996,150 @@ ul{
     .choose__descr{
         text-align: center;
     }
+    
+    .works{
+        padding-top: 351px;
+    }
+    
+    
+    .works__heading{
+        margin-bottom: 80px;
+        text-align: left;
+    }
+    
+    .works__list{
+        position: relative;
+    }
+    
+    .works__list::before{
+        width: 900px;
+        background-image: url("../images/desktop-works-before-medium.svg");
+    }
+    
+    .works__item:not(:last-child){
+        margin-right: 95px;
+    }
+    .works__item::before{
+        margin-left: 0;
+        margin-top: 85px;   
+    }
+    .works__link{
+        transition: all 0.3s ease;
+    }
+    
+    .works__link:hover{
+        background-color: #66D2CF;
+    }
+    
+    .works__link:active{
+        background-color: #E2DEDB;  
+    }
+    
+    .footer-box{
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-box .logo .logo__img{
+        margin-right: 103px;
+        margin-bottom: 0;
+    }
+    
+    .footer-box .footer-box__list{
+        margin-left: 0;
+    }
+    
+    
+    
+    .footer-box__item{
+        /* width: none; */
+        margin-right: 30px;
+    }
+    
+    .footer-box__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    
+    .footer-box__item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .footer-box__link{
+        transition: all 0.3s ease;
+    }
+    .footer-box__link:hover{
+        color: #FEFCF7;
+    }
+    
+    .social__link{
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .social__link:hover svg path{
+        fill: #FDD6BA;
+        
+    }
+    
 }
 
+/* =============================
+
+DESKTOP STYLES FOR 1000px FINISH
+
+==============================*/
+
 @media only screen and (min-width: 1050px){
+    
+    /* =============================
+    
+    DESKTOP STYLES OUR COLLECTION BG-IMG ADDED
+    
+    ==============================*/
     .collection__list{
         background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 90%), url("../images/desktop/desktop-collection.svg");
         background-size: 1053px 117px;
     }
+    
+    
+    
 }
 
 @media only screen and (min-width: 1186px){
-
-.choose__list{
-    justify-content: center;
-}
-
+    
+    /* =============================
+    
+    DESKTOP STYLES GREEN CARDS OPTIMIZED
+    
+    ==============================*/
+    
+    .choose__list{
+        justify-content: center;
+    }
+    
     .choose__item{
         max-width: 350px;
     }
-
-
+    
 }
+
+
+@media only screen and (min-width: 1250px) {
+    
+    /* =============================
+    
+    DESKTOP STYLES BIG NUMBER'S BG-IMG OPTIMIZED
+    
+    ==============================*/
+
+    .works__list::before{
+        width: 1010px;
+        background-image: url("../images/desktop-works-before-large.svg");
+    }
+}
+
+
+
 
 .modal{
     display: none; 
