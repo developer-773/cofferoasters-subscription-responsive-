@@ -20,12 +20,12 @@ closee.onclick = function() {
     closee.style.display = "none";
 }
 
-// setTimeout(function() {
-//     let text = "Agar saytimizdan xato topsangiz, bizga yozing.";
-//     if (confirm(text) == true) {
-//         window.open("https://github.com/developer-773/cofferoasters-subscription-responsive-/issues", "_blank")
-//     } else {
-//         text = "You canceled!";
-//     }
-// }, 3000);
+setTimeout(function() {
+    let text = "Agar saytimizdan xato topsangiz, bizga yozing.";
+    if (confirm(text) == true) {
+        window.open("https://github.com/developer-773/cofferoasters-subscription-responsive-/issues", "_blank")
+    } else {
+        text = "You canceled!";
+    }
+}, 3000);
 
