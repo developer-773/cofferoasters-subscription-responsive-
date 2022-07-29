@@ -151,12 +151,11 @@ ul{
 .hero__img{
     display: flex;
     flex-direction: column;
-    padding: 100px 24px;
+    padding: 25px 24px;
     background-image: url("../images/hero-mobilee.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    /* background-position: calc(50%) calc(50%); */
 }
 
 
@@ -165,8 +164,8 @@ ul{
     margin-bottom: 24px;
     font-family: 'Fraunces 9pt';
     font-weight: 900;
-    font-size: 40px;
-    line-height: 40px;    
+    font-size: 31px;
+    line-height: 36px;    
     text-align: center;
     color: #FEFCF7;
 }
@@ -188,7 +187,7 @@ ul{
     display: inline-block;
     margin-right: auto;
     margin-left: auto;
-    padding:15px 31px;
+    padding:16px 20px;
     font-family: 'Fraunces 9pt';
     font-weight: 900;
     font-size: 18px;
@@ -284,7 +283,7 @@ ul{
 
 .choose__list{
     position: absolute;
-    top: 447px;
+    top: 489px;
     left: 0;
     right: 0;
     z-index: 3;
@@ -295,7 +294,7 @@ ul{
 .choose__item{
     position: relative;
     width: 100%;
-    max-width: 279px;
+    max-width: 236px;
     margin: 0 auto;
     margin-bottom: 24px;
     padding: 200px 12px 48px;
@@ -430,7 +429,7 @@ ul{
 
 .footer-box{
     width: 100%;
-    min-width: 300px;
+    min-width: 262px;
     padding: 54px 55px;
     background-color: #2C343E;
 }
@@ -478,6 +477,224 @@ ul{
     color: #fff;
     transition: all 0.3s ease;
 }
+
+.about-hero__img{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 24px;
+    background-image: url("../images/mobile/home-about-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+}
+
+.about-hero__heading{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center; 
+    color: #FEFCF7;
+}
+
+.about-hero__desc{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;  
+    color: #FEFCF7; 
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.commitment{
+    padding-top: 120px;
+}
+
+.commitment__img-box img{
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+}
+
+.commitment__img-tablet,
+.commitment__img-desktop{
+    display: none;
+}
+
+.commitment__title{
+    margin-top: 48px;
+    margin-bottom: 30px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center; 
+    color: #333D4B;
+}
+
+.commitment__desc{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center; 
+    color: #333D4B; 
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.quality{
+    padding-top: 198px;
+}
+
+.quality__box{
+    position: relative;
+    padding: 142px 24px 61px 24px;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.quality__img-mobile{
+    position: absolute;
+    top: -77px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.quality__img-desktop,
+.quality__img-tablet{
+    display: none;
+}
+
+
+
+.quality__title{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;  
+    color: #FEFCF7;
+}
+
+.quality__desc{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;  
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.headquarters{
+    padding: 120px 0;
+}
+
+.headquarters__title{
+    margin-bottom: 72px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center; 
+    color: #83888F;
+}
+
+.headquarters__item{
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+    margin-bottom: 84px;
+    text-align: center;
+}
+
+.headquarters__item:last-child{
+    margin-bottom: 0;
+}
+
+.headquarters__item::before{
+    display: inline-block;
+    width: 42px;
+    height: 51px;
+    margin-bottom: 47px;
+    content: "";
+    background-image: url("../images/mobile/mobile-about-uk.svg");
+    background-repeat: no-repeat;
+}
+
+.headquarters__item:nth-child(2)::before{
+    width: 52px;
+    height: 50px;
+    background-image: url("../images/mobile/home-about-canada.svg");
+}
+
+.headquarters__item:nth-child(3)::before{
+    width: 49px;
+    height: 44px;
+    background-image: url("../images/mobile/home-about-australia.svg");
+}
+
+.headquarters__heading{
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: #333D4B;
+}
+
+.headquarters__box{
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+}
+
+.headquarters__link,
+.headquarters__tel{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center; 
+    color: #333D4B;
+    text-decoration: none;
+}
+
+.headquarters__link .headquarters__address{
+    font-style: normal;
+}
+
+.subscribe-hero__img{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 24px;
+    background-image: url("../images/mobile/mobile-create-plan.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+}
+
+
+
+
+
+
 
 /* ========================= 
 
@@ -557,6 +774,8 @@ MOBILE STYLES FOR 375px FINISH
     .choose__item{
         max-width: 379px;
     }
+    
+    
 }
 
 @media only screen and (min-width: 655px){
@@ -790,6 +1009,67 @@ MOBILE STYLES FOR 375px FINISH
         margin-bottom: 49px;
     }
     
+    /*     
+    .quality__box::before{
+        background-size: 459px 249px;
+    } */
+    
+    .about-hero__img{
+        display: flex;
+        flex-direction: column;
+        padding: 118px 98px;
+        background-image: url("../images/tablet/tablet-about-hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: 10px;
+    }
+    
+    .about-hero__wrap{
+        width: 100%;
+        max-width: 398px;
+    }
+    
+    .about-hero__heading,
+    .about-hero__desc{
+        text-align: left;
+    }
+    
+    .commitment{
+        padding-top: 144px;
+    }
+    
+    .commitment__txt-box{
+        width: 339px;
+        margin: 0 auto;
+    }
+    
+    .quality{
+        padding-top: 270px;
+    }
+    
+    
+    .quality__img-mobile{
+        display: none;
+    }
+    
+    .quality__img-tablet{
+        display: block;
+        position: absolute;
+        top: -189px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+    .quality__title{
+        font-size: 32px;
+        line-height: 48px;
+    }
+    
+    
+    
+    
 }
 
 
@@ -812,6 +1092,48 @@ TABLET STYLES FOR 655px FINISH
         width: 791px;
         background-image: url("../images/tablet-works-before-large.svg");
     }
+    
+    .quality{
+        padding-top: 277px;
+    }
+    
+    .quality__box {
+        padding: 224px 74px 67px 74px;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 777px) {
+    .commitment__img-mobile{
+        display: none;
+    }
+    
+    .commitment__img-tablet{
+        display: block;
+    }
+    
+    .commitment__box{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .headquarters{
+        margin-left: 40px;
+        padding-bottom: 144px;
+    }
+    
+    .headquarters__title{
+        text-align: left;
+    }
+    
+    .headquarters__list{
+        display: flex;
+    }
+    
+    .headquarters__item{
+        margin-bottom: 0;
+    }
 }
 
 
@@ -825,7 +1147,21 @@ TABLET STYLES FOR 655px FINISH
         width: 791px;
         background-image: url("../images/tablet-works-before-medium.svg");
     }
+    
+    .quality__box-txt{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
+
+/* @media only screen and (min-width: 940px){
+    
+    .quality__box::before{
+        background-size: 573px 249px;
+    }
+    
+} */
 
 
 
@@ -1081,6 +1417,171 @@ TABLET STYLES FOR 655px FINISH
         
     }
     
+    .about-hero__heading{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .about-hero__desc{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    
+    
+    .commitment {
+        padding-top: 168px;
+    }
+    
+    
+    .about-hero__img{
+        padding: 137px 85px;
+        background-image: url("../images/desktop/desktop-about.png");
+        
+    }
+    
+    .about-hero__heading{
+        margin-bottom: 24px;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: left; 
+    }
+    
+    .about-hero__desc{
+        
+        font-size: 16px;
+        line-height: 26px;
+        text-align: left;  
+    }
+    
+    .commitment{
+        padding-top: 168px;
+    }
+    
+    
+    .commitment__img-tablet{
+        display: none;
+    }
+    
+    .commitment__img-desktop{
+        display: block;
+    }
+    
+    
+    .commitment__txt-box {
+        width: 540px;
+        margin: 0;
+        margin-right: 10px;
+    }
+    
+    .commitment__title{
+        margin-bottom: 32px;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center; 
+    }
+    
+    .commitment__desc{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center; 
+        color: #333D4B; 
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    
+    .quality{
+        padding-top: 242px;
+    }
+    
+    
+    
+    .quality__box{
+        display: flex;
+        padding: 88px 88px 176px 88px;
+    }
+    
+    
+    .quality__box-txt{
+        width: 80%;
+        margin-right: 80px;
+        
+    }
+    
+    .quality__title{
+        font-weight: 900;
+        text-align: left;  
+    }
+    
+    .quality__desc{
+        
+        font-size: 16px;
+        line-height: 26px;
+        text-align: left;
+    }
+    
+    .quality__img-tablet{
+        display: none;
+    }
+    
+    .quality__img-desktop{
+        display: block;
+        width: 90%;
+    }
+    
+    .headquarters{
+        margin-left: 80px;
+        padding-bottom: 168px;
+    }
+    
+    .headquarters__title{
+        margin-bottom: 78px;
+        text-align: left;
+    }
+    
+    .headquarters__list{
+        justify-content: space-evenly;
+    }
+    
+    .headquarters__item{
+        margin-bottom: 0;
+    }
+    
+    
+    .headquarters__heading{
+        margin-top: 0;
+        margin-bottom: 22px;
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #333D4B;
+    }
+    
+    .headquarters__item{
+        text-align: left;
+        margin: 0;
+    }
+    
+    .headquarters__box{
+        width: 100%;
+        max-width: 285px;
+        text-align: left;
+        margin: 0;
+        
+    }
+    
+    .headquarters__heading,
+    .headquarters__link{
+        text-align: left;
+    }
+    
+    
+    
 }
 
 /* =============================
@@ -1100,6 +1601,8 @@ DESKTOP STYLES FOR 1000px FINISH
         background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 90%), url("../images/desktop/desktop-collection.svg");
         background-size: 1053px 117px;
     }
+    
+    
     
     
     
@@ -1131,12 +1634,35 @@ DESKTOP STYLES FOR 1000px FINISH
     DESKTOP STYLES BIG NUMBER'S BG-IMG OPTIMIZED
     
     ==============================*/
-
+    
     .works__list::before{
         width: 1010px;
         background-image: url("../images/desktop-works-before-large.svg");
     }
+    
+    .headquarters__title{
+        margin-left: 44px;
+    }
 }
+
+@media only screen and (min-width: 1285px) {
+    .quality__img-desktop {
+        position: absolute;
+        top: -78px;
+        right: 86px;
+        display: block;
+        width: 445px;
+        margin: 0;
+    }
+    
+    .quality__box-txt{
+        margin: 0;
+    }
+    
+    
+}
+
+
 
 
 
@@ -1192,13 +1718,3 @@ DESKTOP STYLES FOR 1000px FINISH
     color: #333D4B;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
