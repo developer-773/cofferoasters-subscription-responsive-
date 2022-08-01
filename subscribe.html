@@ -44,20 +44,355 @@
     <!-- ####################  SITE HEADER FINISH ############### -->
     <main>
         <!-- ####################  SITE HERO START ############### -->
-        <section class="about-hero">
+        <section class="subscribe-hero">
             <div class="container">
                 <div class="subscribe-hero__img">
-                    <div class="about-hero__wrap">
-                        <h1 class="about-hero__heading">Coming soon</h1>
-
+                    <div class="subscribe-hero__wrap">
+                        <h2 class="subscribe-hero__heading">Create a plan</h2>
+                        <p class="subscribe-hero__desc">
+                            Build a subscription plan that best fits your needs. We offer an assortment of the best 
+                            artisan coffees from around the globe delivered fresh to your door.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="workss">
+            <div class="container">
+                <div class="workss__box">
+                    <ul class="works__list">
+                        <li class="works__item">
+                            <h3 class="works__title txt">Pick your coffee</h3>
+                            <p class="works__desc txt">
+                                Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.
+                            </p>
+                        </li>
+                        <li class="works__item">
+                            <h3 class="works__title txt">Choose the frequency</h3>
+                            <p class="works__desc txt">
+                                Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.
+                            </p>
+                        </li>
+                        <li class="works__item">
+                            <h3 class="works__title txt">Receive and enjoy!</h3>
+                            <p class="works__desc txt">
+                                We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
+                                world-class coffees curated to provide a distinct tasting experience.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="details">
+            <div class="container">
+                <h2 class="visually-hidden">Types of coffee</h2>
+                <div class="detail__biggest">
+                    <div class="details__left">
+                        <label for="preferences">
+                            <input class="details__left-radio" type="radio" name="" id="preferences">
+                            <span class="details__span"> <span>01</span>Preferences</span>
+                        </label>
+                        <label for="bean">
+                            <input class="details__left-radio" type="radio" name="" id="bean">
+                            <span class="details__span"><span>02</span>Bean Type</span>
+                        </label>
+                        <label for="quantity">
+                            <input class="details__left-radio" type="radio" name="" id="quantity">
+                            <span class="details__span"><span>03</span> Quantity</span>
+                        </label>
+                        <label for="grind">
+                            <input class="details__left-radio" type="radio" name="" id="grind">
+                            <span class="details__span"><span>04</span> Grind Option</span>
+                        </label>
+                        <label for="deliver">
+                            <input class="details__left-radio" type="radio" name="" id="deliver">
+                            <span class="details__span"><span>05</span> Deliveres</span>
+                        </label>
+                    </div>
+                    <form class="details__form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+                        <details class="details__main">
+                            <summary class="details__summary">How do you drink your coffee?
+                                <img class="details__drop" src="./images/detail-drop.svg" width="18" height="11" alt="">
+                            </summary>         
+                            <ul class="details__big-box">
+                                <li class="details__item">
+                                    <label for="capsule">
+                                        <input class="details__radio" id="capsule" type="radio" name="user__coffee" value="Capsule">
+                                        
+                                        <span class="details__box">
+                                            <span class="details__heading">Capsule</span>
+                                            <span class="details__description">
+                                                Compatible with Nespresso systems and similar brewers
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="filter">
+                                        <input class="details__radio" type="radio" name="user__coffee" id="filter" value="Filter">
+                                        
+                                        <span class="details__box">
+                                            <span class="details__heading">Filter</span>
+                                            <span class="details__description">
+                                                For pour over or drip methods like Aeropress, Chemex, and V60
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="espresso">
+                                        <input class="details__radio" type="radio" id="espresso" name="user__coffee" value="Espresso">
+                                        
+                                        <span class="details__box">
+                                            <span class="details__heading">Espresso</span>
+                                            <span class="details__description">
+                                                Dense and finely ground beans for an intense, flavorful experience
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="details__main">
+                            <summary class="details__summary">What type of coffee?
+                                <img class="details__drop" src="./images/detail-drop.svg" width="18" height="11" alt="">
+                            </summary>
+                            
+                            <ul class="details__big-box">
+                                <li class="details__item">
+                                    <label for="single">
+                                        <input class="details__radio" type="radio" id="single" name="user__coffee__type" value="single_origin">
+                                        <span class="details__box">
+                                            <span class="details__heading">Single Origin</span>
+                                            <span class="details__description">
+                                                Distinct, high quality coffee from a specific family-owned farm 
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="decaf">
+                                        <input class="details__radio" type="radio" id="decaf" name="user__coffee__type" value="decaf">
+                                        <span class="details__box">
+                                            <span class="details__heading">Decaf</span>
+                                            <span class="details__description">
+                                                Just like regular coffee, except the caffeine has been removed
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="blended">
+                                        <input class="details__radio" type="radio" id="blended" name="user__coffee__type" value="blended">
+                                        <span class="details__box">
+                                            <span class="details__heading">Blended</span>
+                                            <span class="details__description">
+                                                Combination of two or three dark roasted beans of organic coffees
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="details__main">
+                            <summary class="details__summary">How much would you like?
+                                <img class="details__drop" src="./images/detail-drop.svg" width="18" height="11" alt="">
+                            </summary>
+                            <ul class="details__big-box">
+                                <li class="details__item">
+                                    <label for="250">
+                                        <input class="details__radio" type="radio" id="250" name="user__coffee__weight" value="250g">
+                                        <span class="details__box">
+                                            <span class="details__heading">250g</span>
+                                            <span class="details__description">
+                                                Perfect for the solo drinker. Yields about 12 delicious cups.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="500">
+                                        <input class="details__radio" type="radio" id="500" name="user__coffee__weight" value="500g">
+                                        <span class="details__box">
+                                            <span class="details__heading">500g</span>
+                                            <span class="details__description">
+                                                Perfect option for a couple. Yields about 40 delectable cups.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="1000">
+                                        <input class="details__radio" type="radio" id="1000" name="user__coffee__weight" value="1000g">
+                                        <span class="details__box">
+                                            <span class="details__heading">1000g</span>
+                                            <span class="details__description">
+                                                Perfect for offices and events. Yields about 90 delightful cups.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="details__main">
+                            <summary class="details__summary">Want us to grind them?
+                                <img class="details__drop" src="./images/detail-drop.svg" width="18" height="11" alt="">
+                            </summary>    
+                            <ul class="details__big-box">
+                                <li class="details__item">
+                                    <label for="wholebean">
+                                        <input class="details__radio" type="radio" id="wholebean" name="user__coffee__grind" value="wholebean">
+                                        <span class="details__box">
+                                            <span class="details__heading">Wholebean</span>
+                                            <span class="details__description">
+                                                Best choice if you cherish the full sensory experience
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="filter">
+                                        <input class="details__radio" type="radio" id="filter" name="user__coffee__grind" value="filter">
+                                        <span class="details__box">
+                                            <span class="details__heading">Filter</span>
+                                            <span class="details__description">
+                                                For pour over or drip methods like Aeropress, Chemex, and V60
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="cafetiere">
+                                        <input class="details__radio" type="radio" id="cafetiere" name="user__coffee__grind" value="cafetiere">
+                                        <span class="details__box">
+                                            <span class="details__heading">Cafetiére</span>
+                                            <span class="details__description">
+                                                Course ground beans specially suited for french press coffee
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="details__main">
+                            <summary class="details__summary">How often should we deliver?
+                                <img class="details__drop" src="./images/detail-drop.svg" width="18" height="11" alt="">
+                            </summary>
+                            
+                            <ul class="details__big-box">
+                                <li class="details__item">
+                                    <label for="week">
+                                        <input class="details__radio" type="radio" id="week" name="user__coffee__deliver" value="every__week">
+                                        <span class="details__box">
+                                            <span class="details__heading">Every week</span>
+                                            <span class="details__description">
+                                                $7.20 per shipment. Includes free first-class shipping.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="2week">
+                                        <input class="details__radio" type="radio" id="2week" name="user__coffee__deliver" >
+                                        <span class="details__box">
+                                            <span class="details__heading">Every 2 weeks</span>
+                                            <span class="details__description">
+                                                $9.60 per shipment. Includes free priority shipping.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="details__item">
+                                    <label for="month">
+                                        <input class="details__radio" type="radio" id="month" name="user__coffee__deliver">
+                                        <span class="details__box">
+                                            <span class="details__heading">Every month</span>
+                                            <span class="details__description">
+                                                $12.00 per shipment. Includes free priority shipping.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </details>
+                        <div class="order"> 
+                            <h3 class="order__title">Order Summary</h3>
+                            <p class="order__desc">
+                                “I drink my coffee as <span>Filter</span> , with a <span>Decaf</span>  type of bean. <span>250g</span>  ground ala <span>Cafetiére</span> , sent to me <span>Every Week</span> .”
+                            </p>
+                        </div>
+                        <button id="order" class="order__btn" type="button">Create my plan!</button>
+                        <div id="myModall" class="modall"> 
+                            <div class="modal-content">
+                                <div class="modal__main-txt-box">
+                                    <h3 class="modal__title">Order Summary</h3>
+                                </div>
+                                <div class="modal__txt-box">
+                                    <h4 class="modal__heading">“I drink my coffee as Filter, with a Decaf type of bean. 250g ground ala Cafetiére, sent to me Every Week.”</h4>
+                                    <p class="modal__desc">
+                                        Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. 
+                                    </p>
+                                    <a  class="order__btn order__btn--active">
+                                        <span class="order__span"> Checkout </span>
+                                        <span class="order__price">$14.00 / mo</span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <a class="logo" href="./mobile.html">
+                    <img class="logo__img img" src="./images/mobile/footer-logo.svg"
+                    width="163"
+                    height="18"
+                    alt="Coffeeroaster's logo">
+                </a>
+                <ul class="footer-box__list">
+                    <li class="footer-box__item">
+                        <a class="footer-box__link" href="#">HOME</a>
+                    </li>
+                    <li class="footer-box__item">
+                        <a class="footer-box__link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="footer-box__item">
+                        <a class="footer-box__link" href="#">Create your plan</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="https://www.facebook.com" target="_blank">
+                                <svg width="25" height="24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M22.775 0H1.425C.693 0 .1.593.1 1.325v21.351C.1 23.407.693 24 1.425 24H12.92v-9.294H9.792v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.66-4.788 1.324 0 2.462.099 2.794.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24.1.593 23.507 0 22.775 0Z" fill="currentColor"/></svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://www.twitter.com" target="_blank">
+                                <svg width="25" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.1 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.437.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.716.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.771 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.95 4.89a4.935 4.935 0 0 1-2.225.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 .1 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24.1 2.557Z" fill="currentColor"/></svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://www.instagram.com" target="_blank">
+                                <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.1 0C8.841 0 8.433.014 7.153.072 2.795.272.373 2.69.173 7.052.114 8.333.1 8.741.1 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.69.072 4.948.072 3.26 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.77.014 15.36 0 12.1 0Zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.92 4.919.057 1.265.068 1.645.068 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.77-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.15-3.227 1.664-4.771 4.92-4.919 1.265-.057 1.644-.069 4.848-.069ZM5.938 12a6.162 6.162 0 1 1 12.325 0 6.162 6.162 0 0 1-12.325 0Zm6.162 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.88-.001Z" fill="currentColor"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
     </footer>
+    <!-- ####################  FOOTER START ############### -->
+    
+    <!-- ####################  MOBILE HEADER HAMBURGER MODAL ############### -->
     <div  id="myModal" class="modal">   
         <div class="modal__main-box ">
             <div class="modal__box">
@@ -76,6 +411,8 @@
             
         </div>
     </div>
+    
+    <!-- ####################  MOBILE HEADER HAMBURGER MODAL FINISH ############### -->
     <script src="./js/main.js"></script> 
 </body>
 </html>

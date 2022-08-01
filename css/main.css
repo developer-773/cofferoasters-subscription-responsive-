@@ -679,6 +679,11 @@ ul{
     font-style: normal;
 }
 
+
+.subscribe-hero{
+    padding-bottom: 120px;
+}
+
 .subscribe-hero__img{
     display: flex;
     flex-direction: column;
@@ -689,6 +694,248 @@ ul{
     background-position: right;
     border-radius: 10px;
 }
+
+.subscribe-hero__heading{
+    margin-bottom: 22px;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 31px;
+    line-height: 36px;  
+    text-align: center;
+    color: #FEFCF7;
+}
+
+.subscribe-hero__desc{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px; 
+    text-align: center;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.workss + .works{
+    padding-top: 0;
+}
+
+.workss{
+    padding: 64px 0;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.works__item--active{
+    padding-top: 64px;
+    
+}
+
+.txt{
+    color: #fff;
+}
+
+.details{
+    padding-top: 120px;
+    padding-bottom: 114px;
+}
+
+.details__left {
+    display: none;
+}
+
+.details__main{
+    margin-bottom: 96px;
+}
+
+.details__summary{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;  
+    color: #83888F;
+    list-style: none;
+}
+
+.details__drop{
+    margin-left: 69px;
+    transition: all 0.3s ease;
+}
+
+.details__main[open] .details__drop {
+    transform: rotate(
+    180deg
+    );
+}
+[type="radio"]{
+    opacity: 0;
+}
+
+.details__box{
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 24px;
+    padding: 24px 25px;
+    background-color: #F4F1EB;
+    border-radius: 8px; 
+}
+
+
+.details__radio:checked+ .details__box{
+    background-color:#0E8784;
+}
+
+.details__heading{
+    margin-bottom: 8px;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px; 
+    color: #333D4B;
+}
+
+.details__description{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.details__radio:checked+.details__box * {
+    color: #fff;
+}
+
+.order{
+    margin-bottom: 56px;
+    padding: 37px 25px;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.order__title{
+    margin-bottom: 8px;
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;  
+    color: #FFFFFF; 
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.order__desc{
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.order__desc > span {
+    opacity: 0.5;
+}
+
+.modall{
+    display: none;
+}
+
+.modal__main-txt-box{
+    padding: 28px 24px;
+    color: #fff;
+    background-color: #333D4B;
+    border-radius: 8px 8px 0px 0px; 
+}
+
+.modal__title{
+    margin: 0;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px; 
+    color: #FFFFFF;
+    
+}
+
+.modal__txt-box{
+    padding: 9px;
+}
+
+.modal__heading{
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #83888F;
+    
+}
+
+.modal__desc{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333D4B;  
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.order__btn{
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 17px 4px;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;  
+    text-align: center;  
+    color: #FEFCF7;
+    background-color: #0E8784;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.modal-content{
+    width: 327px; 
+    height: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    
+}
+
+.modal__main-txt-box{
+    padding: 28px 24px;
+    color: #fff;
+    background-color: #333D4B;
+    border-radius: 8px 8px 0px 0px; 
+}
+
+.modal__heading,
+.modal__desc{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* ========================= 
@@ -706,6 +953,8 @@ MOBILE STYLES FOR 375px START
 
 
 @media only screen and (min-width: 375px){
+    
+    
     
     .hero__img{
         background-image: url("../images/hero-tablet.png");
@@ -735,7 +984,48 @@ MOBILE STYLES FOR 375px START
         padding-top: 717px;
     }
     
+    .subscribe-hero__img{
+        padding: 101px 25px;
+    }
+    
+    .subscribe-hero__heading{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .workss__list{
+        background-color: #2C343E;
+        border-radius: 10px;
+    }
+    
+    
+    .workss__title{
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;   
+        text-align: center;  
+        color: #FFFFFF;
+    }
+    
+    .workss__desc{
+        font-family: 'Barlow';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center; 
+        color: #FFFFFF;
+    }
+    
+    .subscribe-hero__heading{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
 }
+
+
 
 /* ==============================
 
@@ -756,6 +1046,12 @@ MOBILE STYLES FOR 375px FINISH
     
     .choose__item{
         max-width: 340px;
+    }
+    
+    .details__box{
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
     }
 }
 
@@ -1004,11 +1300,6 @@ MOBILE STYLES FOR 375px FINISH
         margin-bottom: 49px;
     }
     
-    /*     
-    .quality__box::before{
-        background-size: 459px 249px;
-    } */
-    
     .about-hero__img{
         display: flex;
         flex-direction: column;
@@ -1063,8 +1354,84 @@ MOBILE STYLES FOR 375px FINISH
     }
     
     
+    .subscribe-hero__img{
+        padding: 127px 58px;
+    }
+    
+    .subscribe-hero__wrap{
+        width: 398px;
+    }
     
     
+    .subscribe-hero__heading{
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 48px; 
+    }
+    
+    
+    .subscribe-hero__heading,
+    .subscribe-hero__desc{
+        text-align: left;
+    }
+    
+    
+    .workss{
+        padding-top: 170px;
+        padding-bottom: 97px;
+        background-color: #2C343E;
+        border-radius: 10px;
+    }
+    
+    .works__list::before{
+        width: 604px;
+        top: -45px;
+    }
+    
+    .details__big-box{
+        display: flex;
+    }
+    
+    
+    
+    .details__item:not(:last-child){
+        margin-right: 10px;
+    }
+    
+    
+    
+    .details__box{
+        display: flex;
+        flex-direction: column;
+        width: 208px;
+        margin-bottom: 24px;
+        padding-top: 32px;
+        padding-bottom: 84px;
+        /* padding: 24px 25px; */
+        background-color: #F4F1EB;
+        border-radius: 8px; 
+    }
+    
+    
+    input:checked+ .details__box{
+        background-color:#0E8784;
+    }
+    
+    .details__heading{
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 32px; 
+    }
+    
+    
+    
+    
+}
+
+@media only screen and (max-width: 734px){
+    .details__box{
+        width: 205px;
+    }
 }
 
 
@@ -1074,6 +1441,16 @@ TABLET STYLES FOR 655px FINISH
 
 ==============================*/
 
+@media only screen and (max-width: 761px){
+    
+    .details__item{
+        margin-right: 3px;
+    }
+    
+    .details__box{
+        width: 200px;
+    }
+}
 
 
 @media only screen and (min-width: 749px) {
@@ -1084,7 +1461,7 @@ TABLET STYLES FOR 655px FINISH
     
     ==============================*/
     .works__list::before{
-        width: 791px;
+        width: 704px;
         background-image: url("../images/tablet-works-before-large.svg");
     }
     
@@ -1129,7 +1506,62 @@ TABLET STYLES FOR 655px FINISH
     .headquarters__item{
         margin-bottom: 0;
     }
+    
+    .details__box{
+        width: 223px;
+    }
+    
+    .modal-content{
+        width: 540px;
+        height: 500px;
+        margin-top: 173px;
+    }
+    
+    .modal__main-txt-box{
+        margin-bottom: 57px;
+    }
+    
+    .modal__txt-box{
+        padding: 0 43px;
+    }
+    
+    .modal__desc{
+        margin-bottom: 19px;
+    }
+    
+    .order__btn--active{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: none;
+        margin-right: auto;
+        font-size: 32px;
+        line-height: 36px;
+        background-color: transparent;
+    }
+    
+    .order__span{
+        padding: 15px 38px;
+        border-radius: 5px;
+    }
+    
+    .order__btn--active .order__span{
+        background-color: #333D4B;
+    }
+    
+    .order__price{
+        color: #333D4B;
+        
+    }
 }
+/* 
+@media only screen and (max-width: 821px){
+    .details__box{
+        width: 223px;
+    }
+} */
 
 
 @media only screen and (min-width: 850px) {
@@ -1575,6 +2007,136 @@ TABLET STYLES FOR 655px FINISH
         text-align: left;
     }
     
+    .subscribe-hero{
+        padding-bottom: 145px;
+    }
+    
+    .subscribe-hero__img{
+        padding: 134px 85px;
+    }
+    
+    .subscribe-hero__wrap{
+        width: 485px;
+    }
+    
+    .subscribe-hero__heading{
+        margin-bottom: 32px;
+        font-size: 72px;
+        line-height: 72px; 
+    }
+    
+    
+    .subscribe-hero__heading,
+    .subscribe-hero__desc{
+        text-align: left;
+    }
+    
+    
+    .workss{
+        background-color: transparent;
+    }
+    
+    .workss__box{
+        padding: 100px 40px 50px 40px;
+        background-color: #2C343E;
+    }
+    
+    .works__list::before{
+        width: 915px;
+        top: -45px;
+    }
+    
+    .details{
+        padding-top: 168px;
+    }
+    
+    .detail__biggest{
+        display: flex;
+    }
+    
+    .details__left{
+        display: flex;
+        flex-direction: column;
+        width: 560px;
+        margin-right: 80px;
+        margin-left: 27px;
+        
+    }
+    
+    .details__left > label{
+        padding: 24px 0;
+        border-bottom: 1px solid #83888F;
+        cursor: pointer;
+    }
+    
+    .details__left > label:nth-child(1){
+        padding-top: 0;
+    }
+    
+    .details__left label:last-child{
+        border-bottom: 0;
+    }
+    
+    .details__span:hover{
+        color: #333D4B;
+        
+    }
+    
+    
+    
+    .details__span{
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color:  #83888F;
+    }
+    
+    .details__span > span{
+        margin-right: 28px;
+    }
+    
+    .details__big-box{
+        display: flex;
+    }
+    
+    
+    
+    .details__item:not(:last-child){
+        margin-right: 10px;
+    }
+    
+    .details__summary{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .details__box:hover {
+        background-color: #FDD6BA;
+    }
+    
+    .details__box{
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        margin-bottom: 24px;
+        padding-top: 32px;
+        padding-bottom: 84px;
+        
+    }
+    
+    .details__heading{
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 32px; 
+    }
+    
+    .order__btn{
+        margin-right: 0;
+    }
+    
+    
+    
     
     
 }
@@ -1619,6 +2181,39 @@ DESKTOP STYLES FOR 1000px FINISH
         max-width: 350px;
     }
     
+    .details__left{
+        margin-right: 125px;
+        margin-left: 85px;
+    }
+
+    .modal-content{
+        height: 523px;
+    }
+    
+    
+    .modal__main-txt-box{
+        padding: 28px 24px;
+        color: #fff;
+        background-color: #333D4B;
+        border-radius: 8px 8px 0px 0px; 
+    }
+    
+    .modal__title{
+        margin: 0;
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 48px; 
+        color: #FFFFFF;
+        
+    }
+    
+    .modal__txt-box{
+        padding: 40px 24px 24px;
+    }
+    
+    
+    
 }
 
 
@@ -1654,12 +2249,22 @@ DESKTOP STYLES FOR 1000px FINISH
         margin: 0;
     }
     
+    .workss__box{
+        padding: 113px 85px 99px 85px;
+    }
+    
+    
+    
     
 }
 
 
 
+/* ====================
 
+HEADER HAMBURGER MODAL
+
+*/
 
 
 .modal{
@@ -1696,7 +2301,6 @@ DESKTOP STYLES FOR 1000px FINISH
     display: flex;
     flex-direction: column;
     text-align: center;
-    
     list-style: none;
 }
 
@@ -1713,3 +2317,48 @@ DESKTOP STYLES FOR 1000px FINISH
     color: #333D4B;
     text-decoration: none;
 }
+
+/* ===================
+
+DETAILS CHECKOUT MODAL
+
+*/
+
+
+.modall{
+    display: none; 
+    position: fixed; 
+    z-index: 30; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    background-color: #00000066;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    animation: modalContentFadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+@keyframes modalContentFadeIn {
+    0%{
+        transform: scale(0.8);
+        opacity: 0.1;
+    }
+    
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* .modal-content{
+    width: 500px; 
+    height: 518px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    
+} */
+
